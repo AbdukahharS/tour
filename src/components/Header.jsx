@@ -13,13 +13,15 @@ const Header = () => {
     <header>
       <div className='cont'>
         <div>
-          <a href='mailto:myexample@domain.com' className='brdr'>
-            <MdOutlineEmail />
-            <span>myexample@domain.com</span>
+          <MdLocalPhone />
+          <a href='tel:+998908173277' className='brdr'>
+            <span>+998908173277</span>
           </a>
-          <a href='tel:+998123456789' className='brdr'>
-            <MdLocalPhone />
-            <span>+998123456789</span>
+          <a href='tel:+998900663311' className='brdr'>
+            <span>+998900663311</span>
+          </a>
+          <a href='tel:+998909193938' className='brdr'>
+            <span>+998909193938</span>
           </a>
         </div>
         <div>
@@ -27,7 +29,7 @@ const Header = () => {
           <span className='brdr'>Du - Sha / 09:00 - 18:00</span>
         </div>
         <div className='scl-media'>
-          <a href='#'>
+          <a href='https://t.me/nodirahsultan'>
             <FaTelegramPlane />
           </a>
           <a href='#'>
@@ -36,7 +38,7 @@ const Header = () => {
           <a href='#'>
             <FaTiktok />
           </a>
-          <a href='#'>
+          <a href='https://www.instagram.com/nodirahsultan.tour/'>
             <FaInstagram />
           </a>
           <a href='#'>
