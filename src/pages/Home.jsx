@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import Statistics from '../components/Statistics'
 import Benefits from '../components/Benefits'
+import Facilities from '../components/Facilities'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <About />
       <Statistics />
       <Benefits />
+      <Facilities />
     </div>
   )
 }
