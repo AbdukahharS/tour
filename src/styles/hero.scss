@@ -1,109 +1,54 @@
-.wrapper {
+nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #fff;
+
+  .hover {
+    transition: 0.2s ease-in-out;
+    &:hover {
+      color: $primLight;
+    }
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+
+    a {
+      display: block;
+      border-bottom: 2px solid #ffffff00;
+      color: inherit;
+      padding: 10px;
+
+      &:hover {
+        border-color: $primLight;
+      }
+    }
+  }
+}
+
+// .wrapper {
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  justify-content: space-evenly;
   min-height: 85vh;
   position: relative;
   background: $shadowFilter;
   color: #fff;
-  display: flex;
-  flex-direction: column;
-
-  nav {
-    display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-
-    .hover {
-      transition: 0.2s ease-in-out;
-      &:hover {
-        color: $primLight;
-      }
-    }
-
-    .logo {
-      height: 80px;
-    }
-
-    .links {
-      display: flex;
-      flex-direction: row;
-
-      a {
-        display: block;
-        border-bottom: 2px solid #ffffff00;
-        color: inherit;
-        padding: 10px;
-
-        &:hover {
-          border-color: $primLight;
-        }
-      }
-    }
-  }
-
-  .hero {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex: 1;
-    justify-content: space-evenly;
-
-    .greetings {
-      width: 55%;
-      max-width: 600px;
-
-      h1 {
-        font-size: 80px;
-        margin-bottom: 50px;
-      }
-
-      p {
-        font-size: 18px;
-      }
-    }
-
-    .contact {
-      width: 30%;
-      max-width: 370px;
-
-      form {
-        width: 100%;
-
-        h2 {
-          font-size: 23px;
-        }
-
-        label {
-          display: block;
-          margin-top: 25px;
-          margin-bottom: 5px;
-        }
-
-        input,
-        textarea {
-          width: 100%;
-          border-radius: 6px;
-          padding: 14px 24px;
-          font-size: 1rem;
-          border: none;
-          outline: none;
-        }
-
-        button {
-          border-radius: 6px;
-          width: 100%;
-          margin-top: 25px;
-          background: $prim;
-          padding: 14px 0;
-          font-size: 1rem;
-          text-transform: uppercase;
-        }
-      }
-    }
-  }
 
   &::after {
     background: url('../images/hero-bg.jpg');
@@ -118,4 +63,59 @@
     content: '';
     z-index: -1;
   }
+
+  .greetings {
+    width: 55%;
+    max-width: 600px;
+
+    h1 {
+      font-size: 80px;
+      margin-bottom: 50px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .contact {
+    width: 30%;
+    max-width: 370px;
+
+    form {
+      width: 100%;
+
+      h2 {
+        font-size: 23px;
+      }
+
+      label {
+        display: block;
+        margin-top: 25px;
+        margin-bottom: 5px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        border-radius: 6px;
+        padding: 14px 24px;
+        font-size: 1rem;
+        border: none;
+        outline: none;
+      }
+
+      button {
+        border-radius: 6px;
+        width: 100%;
+        margin-top: 25px;
+        background: $prim;
+        padding: 14px 0;
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
+
+// }

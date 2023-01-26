@@ -1,6 +1,6 @@
 import React from 'react'
 import { MdArrowDropDown, MdShoppingCart } from 'react-icons/md'
-import Logo from '../images/logo-hor.svg'
+import Logo from '../images/logo-hor.png'
 import Uz from '../images/uzb.svg'
 
 const Navbar = () => {
