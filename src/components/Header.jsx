@@ -1,5 +1,5 @@
 import React from 'react'
-import { MdOutlineEmail, MdLocalPhone, MdCalendarToday } from 'react-icons/md'
+import { MdLocalPhone, MdCalendarToday } from 'react-icons/md'
 import {
   FaTelegramPlane,
   FaYoutube,
@@ -32,16 +32,16 @@ const Header = () => {
           <a href='https://t.me/nodirahsultan'>
             <FaTelegramPlane />
           </a>
-          <a href='#'>
+          <a href='youtube.com'>
             <FaYoutube />
           </a>
-          <a href='#'>
+          <a href='tiktok.com'>
             <FaTiktok />
           </a>
           <a href='https://www.instagram.com/nodirahsultan.tour/'>
             <FaInstagram />
           </a>
-          <a href='#'>
+          <a href='facebook.com'>
             <FaFacebookF />
           </a>
         </div>
