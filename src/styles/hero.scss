@@ -20,9 +20,54 @@ nav {
     height: 80px;
   }
 
+  .lang {
+    position: relative;
+
+    img {
+      margin-right: 5px;
+    }
+
+    .content {
+      position: absolute;
+      background: #fff;
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 10px 5px 10px;
+      left: -10px;
+      border-radius: 3px;
+
+      &.drop {
+        display: flex;
+      }
+    }
+  }
+
   .links {
     display: flex;
     flex-direction: row;
+
+    .hoverdown {
+      position: relative;
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+
+        a {
+          font-size: 14px;
+        }
+      }
+
+      &:hover .dropdown-content {
+        display: block;
+      }
+    }
 
     a {
       display: block;
@@ -36,8 +81,6 @@ nav {
     }
   }
 }
-
-// .wrapper {
 
 .hero {
   display: flex;
