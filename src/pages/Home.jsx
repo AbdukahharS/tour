@@ -6,6 +6,7 @@ import Statistics from '../components/Statistics'
 import Benefits from '../components/Benefits'
 import Facilities from '../components/Facilities'
 import Review from '../components/Review'
+import Tours from '../components/Tours'
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Benefits />
       <Facilities />
       <Review />
+      <Tours />
     </div>
   )
 }
