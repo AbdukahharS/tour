@@ -7,6 +7,7 @@ import Benefits from '../components/Benefits'
 import Facilities from '../components/Facilities'
 import Review from '../components/Review'
 import Tours from '../components/Tours'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Facilities />
       <Review />
       <Tours />
+      <Footer />
     </div>
   )
 }
