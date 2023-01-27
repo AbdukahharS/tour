@@ -13,7 +13,7 @@ const About = () => {
         <div className='card'>
           <div className='inner-card'>
             <div className='front'>
-              <img src={Icon} />
+              <img src={Icon} alt='About us' />
               <h3>Biz haqimizda</h3>
               <div className='brdr'>
                 <span>Batafsil</span> <MdOutlineArrowRightAlt />

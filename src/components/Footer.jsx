@@ -19,7 +19,7 @@ const Footer = () => {
     <footer>
       <div className='top'>
         <div className='col'>
-          <img src={Logo} alt='' />
+          <img src={Logo} alt='NodirahSultan' />
           <p>
             Biz sizga mustaqil, xavfsiz va qiziqarli sayohat qilishingizga
             yordam beramiz!
@@ -77,7 +77,7 @@ const Footer = () => {
         </div>
         <div className='developer'>
           <a href='https://abdukahhar.uz'>
-            <img src={DevLogo} />{' '}
+            <img src={DevLogo} alt='Shahzad Abdukahhar' />{' '}
             <span>
               {' '}
               - ushbu vebsayt Shahzod Abduqahhor tomonidan yaratildi !

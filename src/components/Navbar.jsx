@@ -6,25 +6,25 @@ import Uz from '../images/uzb.svg'
 const Navbar = () => {
   return (
     <nav>
-      <img src={Logo} className='logo' />
+      <img src={Logo} alt='NodirahSultan' className='logo' />
       <div className='lang'>
         <button className='hover'>
-          <img src={Uz} />
+          <img src={Uz} alt='flag' />
           <span>UZ</span>
           <MdArrowDropDown />
         </button>
       </div>
       <div className='links'>
-        <a href='#' className='hover'>
+        <a href='#about' className='hover'>
           Biz haqimizda
         </a>
-        <a href='#' className='hover'>
+        <a href='#facilities' className='hover'>
           Qulayliklar
         </a>
-        <a href='#' className='hover'>
+        <a href='#review' className='hover'>
           Mijozlarimiz fikrlari
         </a>
-        <a href='#' className='hover'>
+        <a href='#tours' className='hover'>
           Tur dastur
         </a>
       </div>
