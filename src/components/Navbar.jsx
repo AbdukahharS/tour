@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useContext, useEffect } from 'react'
+import { CartContext } from '../context/CartContext'
 import { MdArrowDropUp, MdArrowDropDown, MdShoppingCart } from 'react-icons/md'
 import Logo from '../images/logo-hor.png'
 import Uz from '../images/uzb.svg'
@@ -6,7 +7,18 @@ import En from '../images/en.svg'
 import Ru from '../images/ru.svg'
 
 const Navbar = () => {
+  const { cart } = useContext(CartContext)
   const [drop, setDrop] = useState(false)
+  const [summ, setSumm] = useState(0)
+
+  useEffect(() => {
+    let s = 0
+    cart.forEach((tour) => {
+      s += tour.price
+    })
+
+    setSumm(s)
+  }, [cart])
 
   return (
     <nav>
@@ -53,7 +65,7 @@ const Navbar = () => {
       </div>
       <button className='cart hover'>
         <MdShoppingCart />
-        <span>0 UZS</span>
+        <span>{summ} USD</span>
       </button>
     </nav>
   )
