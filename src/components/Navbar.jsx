@@ -22,7 +22,9 @@ const Navbar = () => {
 
   return (
     <nav>
-      <img src={Logo} alt='NodirahSultan' className='logo' />
+      <a href='/'>
+        <img src={Logo} alt='NodirahSultan' className='logo' />
+      </a>
       <div className='lang'>
         <button className='hover'>
           <img src={Uz} alt='flag' />

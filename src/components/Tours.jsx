@@ -47,18 +47,6 @@ const Tours = () => {
               </div>
             </div>
           ))}
-        <div className='card'>
-          <img src={Umrah} alt='Umrah' />
-          <div className='top'>
-            <h3>Umra safari</h3>
-            <span>1850 $</span>
-          </div>
-          <div className='bottom'>
-            <button>
-              <MdShoppingCart />
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   )
