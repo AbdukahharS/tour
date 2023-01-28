@@ -44,29 +44,29 @@ const Navbar = () => {
       </div>
       <div className='links'>
         <div className='hoverdown'>
-          <a href='#about' className='hover'>
+          <a href='/#about' className='hover'>
             <span>Biz haqimizda</span>
             <MdArrowDropDown />
           </a>
           <div className='dropdown-content'>
-            <a href='#statistics'>Statistik ma'lumotlar</a>
-            <a href='#benefits'>Umra haqida</a>
+            <a href='/#statistics'>Statistik ma'lumotlar</a>
+            <a href='/#benefits'>Umra haqida</a>
           </div>
         </div>
-        <a href='#facilities' className='hover'>
+        <a href='/#facilities' className='hover'>
           Qulayliklar
         </a>
-        <a href='#review' className='hover'>
+        <a href='/#review' className='hover'>
           Mijozlarimiz fikrlari
         </a>
-        <a href='#tours' className='hover'>
+        <a href='/#tours' className='hover'>
           Tur dastur
         </a>
       </div>
-      <button className='cart hover'>
+      <a href='/cart' className='cart hover'>
         <MdShoppingCart />
         <span>{summ} USD</span>
-      </button>
+      </a>
     </nav>
   )
 }

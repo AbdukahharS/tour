@@ -9,7 +9,7 @@ const Tours = () => {
 
   const handleClick = (id) => {
     const tour = tours.filter((t) => t.id === id)
-    const newCart = cart.concat(tour)
+    const newCart = cart.concat([{ ...tour[0], entity: 1 }])
 
     dispatch({ type: 'SET_CART', payload: newCart })
   }
