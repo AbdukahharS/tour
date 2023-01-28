@@ -84,7 +84,6 @@ nav {
 
 .hero {
   display: flex;
-  flex-direction: row;
   align-items: center;
   flex: 1;
   justify-content: space-evenly;
@@ -109,23 +108,12 @@ nav {
   }
 
   .greetings {
-    width: 55%;
-    max-width: 600px;
-
-    h1 {
-      font-size: 80px;
-      margin-bottom: 50px;
-    }
-
     p {
       font-size: 18px;
     }
   }
 
   .contact {
-    width: 30%;
-    max-width: 370px;
-
     form {
       width: 100%;
 

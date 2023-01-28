@@ -6,7 +6,7 @@ import CartComponent from '../components/Cart'
 
 const Cart = () => {
   return (
-    <div>
+    <div style={{ minWidth: '768px' }}>
       <Header />
       <Navbar />
       <CartComponent />

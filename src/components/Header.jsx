@@ -1,5 +1,10 @@
-import React from 'react'
-import { MdLocalPhone, MdCalendarToday } from 'react-icons/md'
+import { useState } from 'react'
+import {
+  MdLocalPhone,
+  MdCalendarToday,
+  MdArrowDropDown,
+  MdArrowDropUp,
+} from 'react-icons/md'
 import {
   FaTelegramPlane,
   FaYoutube,
@@ -7,12 +12,36 @@ import {
   FaInstagram,
   FaFacebookF,
 } from 'react-icons/fa'
+import Uz from '../images/uzb.svg'
+import En from '../images/en.svg'
+import Ru from '../images/ru.svg'
 
 const Header = () => {
+  const [drop, setDrop] = useState(false)
+
   return (
     <header>
       <div className='cont'>
-        <div>
+        <div className='lang'>
+          <button className='hover'>
+            <img src={Uz} alt='flag' />
+            <span>UZ</span>
+          </button>
+          <button className='hover' onClick={() => setDrop((d) => !d)}>
+            {drop ? <MdArrowDropUp /> : <MdArrowDropDown />}{' '}
+          </button>
+          <div className={`content ${drop && 'drop'}`}>
+            <button className='hover'>
+              <img src={En} alt='flag' />
+              <span>EN</span>
+            </button>
+            <button className='hover'>
+              <img src={Ru} alt='flag' />
+              <span>RU</span>
+            </button>
+          </div>
+        </div>
+        <div className='phones wrapper'>
           <MdLocalPhone />
           <a href='tel:+998908173277' className='brdr'>
             <span>+998908173277</span>
@@ -24,11 +53,17 @@ const Header = () => {
             <span>+998909193938</span>
           </a>
         </div>
-        <div>
+        <div className='phone'>
+          <MdLocalPhone />
+          <a href='tel:+998908173277'>
+            <span>+998908173277</span>
+          </a>
+        </div>
+        <div className=' wrapper'>
           <MdCalendarToday />
           <span className='brdr'>Du - Sha / 09:00 - 18:00</span>
         </div>
-        <div className='scl-media'>
+        <div className='scl-media  wrapper'>
           <a href='https://t.me/nodirahsultan'>
             <FaTelegramPlane />
           </a>

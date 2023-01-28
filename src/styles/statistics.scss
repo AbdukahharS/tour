@@ -43,7 +43,6 @@
 
     .card {
       height: 200px;
-      width: 25%;
       max-width: 260px;
 
       .inner-card {
@@ -56,10 +55,6 @@
         align-items: center;
         justify-content: center;
         gap: 15px;
-
-        span {
-          font-size: 48px;
-        }
 
         h3 {
           font-size: 18px;

@@ -17,6 +17,7 @@ html {
 body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
+  min-width: 320px;
 }
 
 a {
@@ -32,6 +33,7 @@ button {
   color: inherit;
 }
 
+@import 'responsive';
 @import 'header', 'hero', 'about', 'statistics', 'benefits', 'facilities',
   'review', 'tours', 'footer';
 

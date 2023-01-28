@@ -1,0 +1,284 @@
+$phone: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1200px;
+
+header {
+  .lang {
+    display: none;
+    position: relative;
+
+    img {
+      margin-right: 5px;
+    }
+
+    .content {
+      position: absolute;
+      background: #fff;
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 10px 5px 10px;
+      left: -10px;
+      border-radius: 3px;
+      z-index: 1002;
+
+      &.drop {
+        display: flex;
+      }
+    }
+  }
+
+  .phone {
+    display: none;
+  }
+}
+
+@media (min-width: $laptop) {
+  .hero {
+    flex-direction: row;
+
+    .greetings {
+      width: 55%;
+      max-width: 600px;
+
+      h1 {
+        font-size: 80px;
+        margin-bottom: 50px;
+      }
+    }
+
+    .contact {
+      width: 30%;
+      max-width: 370px;
+    }
+  }
+
+  #statistics {
+    .card {
+      span {
+        font-size: 48px;
+      }
+    }
+  }
+
+  #benefits {
+    .cont {
+      flex-wrap: nowrap;
+      .card {
+        width: 20%;
+      }
+    }
+  }
+
+  #tours {
+    .cont {
+      gap: 175px;
+      .card {
+        width: calc(50% - 87.5px);
+      }
+    }
+  }
+  #facilities {
+    flex-direction: row;
+
+    .info {
+      flex: 2;
+    }
+    .bg {
+      flex: 1;
+    }
+  }
+}
+
+@media (max-width: $laptop) {
+  header {
+    .scl-media {
+      display: none !important;
+    }
+  }
+  nav {
+    .links {
+      display: none !important;
+    }
+  }
+  .hero {
+    flex-direction: column;
+
+    .greetings {
+      width: 100%;
+      max-width: unset;
+      padding: 60px 40px;
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+    .contact {
+      width: 100%;
+      max-width: unset;
+      padding: 40px;
+    }
+  }
+  #about {
+    .cont {
+      flex-direction: row;
+
+      .card {
+        width: 45%;
+      }
+    }
+  }
+
+  #statistics {
+    .card {
+      width: 25%;
+      span {
+        font-size: 36px;
+      }
+    }
+  }
+
+  #benefits {
+    .cont {
+      flex-wrap: wrap !important;
+
+      .card {
+        width: 47%;
+      }
+    }
+  }
+
+  #tours {
+    .cont {
+      gap: 100px;
+      .card {
+        width: 100%;
+      }
+    }
+  }
+
+  #facilities {
+    flex-direction: column-reverse;
+
+    .info {
+      flex: 2;
+    }
+    .bg {
+      flex: 1;
+      min-height: 500px;
+    }
+  }
+}
+
+@media (max-width: $phone) {
+  header {
+    .lang {
+      display: flex;
+    }
+
+    .wrapper {
+      display: none !important;
+    }
+
+    .phone {
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+    }
+  }
+
+  nav {
+    .lang {
+      display: none;
+    }
+
+    .links {
+      display: none !important;
+    }
+  }
+
+  #about {
+    .cont {
+      flex-direction: column;
+
+      .card {
+        width: 100%;
+      }
+    }
+  }
+
+  #benefits {
+    .cont {
+      flex-wrap: wrap !important;
+
+      .card {
+        width: 100%;
+      }
+    }
+  }
+
+  #statistics {
+    .cont {
+      flex-wrap: wrap;
+      .card {
+        width: calc(50% - 12.5px);
+      }
+    }
+  }
+
+  #tours {
+    .cont {
+      gap: 50px;
+      padding-left: 75px !important;
+      .card {
+        height: 202px !important;
+
+        .top,
+        .bottom {
+          padding-left: 120px !important;
+        }
+        img {
+          left: -100px !important;
+          width: 200px !important;
+          height: 200px !important;
+        }
+      }
+    }
+  }
+
+  #facilities {
+    .info {
+      p {
+        width: 100% !important;
+      }
+    }
+  }
+
+  footer {
+    .top,
+    .bottom {
+      flex-direction: column !important;
+    }
+
+    div {
+      width: 100% !important;
+
+      &.copy {
+        border-bottom: 2px solid #fff;
+        border-right: none !important;
+      }
+    }
+  }
+
+  #checkout {
+    .cont {
+      flex-direction: column !important;
+
+      form,
+      .cart {
+        width: 100% !important;
+      }
+    }
+  }
+}
