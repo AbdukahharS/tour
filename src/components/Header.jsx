@@ -22,25 +22,7 @@ const Header = () => {
   return (
     <header>
       <div className='cont'>
-        <div className='lang'>
-          <button className='hover'>
-            <img src={Uz} alt='flag' />
-            <span>UZ</span>
-          </button>
-          <button className='hover' onClick={() => setDrop((d) => !d)}>
-            {drop ? <MdArrowDropUp /> : <MdArrowDropDown />}{' '}
-          </button>
-          <div className={`content ${drop && 'drop'}`}>
-            <button className='hover'>
-              <img src={En} alt='flag' />
-              <span>EN</span>
-            </button>
-            <button className='hover'>
-              <img src={Ru} alt='flag' />
-              <span>RU</span>
-            </button>
-          </div>
-        </div>
+        {/* <div id='google_translate_element'></div> */}
         <div className='phones wrapper'>
           <MdLocalPhone />
           <a href='tel:+998908173277' className='brdr'>

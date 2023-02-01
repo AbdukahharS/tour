@@ -54,8 +54,20 @@ header {
     }
   }
 
+  #about {
+    .cont {
+      flex-direction: row;
+
+      .card {
+        width: 45%;
+      }
+    }
+  }
+
   #statistics {
     .card {
+      width: 25%;
+
       span {
         font-size: 48px;
       }
@@ -92,11 +104,6 @@ header {
 }
 
 @media (max-width: $laptop) {
-  header {
-    .scl-media {
-      display: none !important;
-    }
-  }
   nav {
     .links {
       display: none !important;
@@ -169,14 +176,21 @@ header {
       min-height: 500px;
     }
   }
+
+  footer {
+    .top {
+      flex-wrap: wrapper;
+
+      .col:last-child {
+        width: 100% !important;
+        flex: 2;
+      }
+    }
+  }
 }
 
 @media (max-width: $phone) {
   header {
-    .lang {
-      display: flex;
-    }
-
     .wrapper {
       display: none !important;
     }
@@ -272,10 +286,10 @@ header {
   }
 
   #checkout {
-    .cont {
+    form {
       flex-direction: column !important;
 
-      form,
+      .form,
       .cart {
         width: 100% !important;
       }

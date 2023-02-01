@@ -33,6 +33,20 @@ button {
   color: inherit;
 }
 
+#google_translate_element {
+  .goog-te-gadget {
+    * {
+      display: none !important;
+    }
+    color: #fff !important;
+    div,
+    select,
+    option {
+      display: inline-block !important;
+    }
+  }
+}
+
 @import 'responsive';
 @import 'header', 'hero', 'about', 'statistics', 'benefits', 'facilities',
   'review', 'tours', 'footer';

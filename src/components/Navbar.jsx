@@ -1,15 +1,15 @@
 import { useState, useContext, useEffect } from 'react'
 import { CartContext } from '../context/CartContext'
-import { MdArrowDropUp, MdArrowDropDown, MdShoppingCart } from 'react-icons/md'
+import { MdArrowDropDown, MdShoppingCart } from 'react-icons/md'
 import Logo from '../images/logo-hor.png'
-import Uz from '../images/uzb.svg'
-import En from '../images/en.svg'
-import Ru from '../images/ru.svg'
+import Icon from '../images/icon.jpg'
 
 const Navbar = () => {
   const { cart } = useContext(CartContext)
-  const [drop, setDrop] = useState(false)
+  const [width, setWidth] = useState(window.innerWidth)
   const [summ, setSumm] = useState(0)
+
+  window.addEventListener('resize', () => setWidth(window.innerWidth))
 
   useEffect(() => {
     let s = 0
@@ -23,27 +23,13 @@ const Navbar = () => {
   return (
     <nav>
       <a href='/'>
-        <img src={Logo} alt='NodirahSultan' className='logo' />
+        <img
+          src={width >= 768 ? Logo : Icon}
+          alt='NodirahSultan'
+          className='logo'
+        />
       </a>
-      <div className='lang'>
-        <button className='hover'>
-          <img src={Uz} alt='flag' />
-          <span>UZ</span>
-        </button>
-        <button className='hover' onClick={() => setDrop((d) => !d)}>
-          {drop ? <MdArrowDropUp /> : <MdArrowDropDown />}{' '}
-        </button>
-        <div className={`content ${drop && 'drop'}`}>
-          <button className='hover'>
-            <img src={En} alt='flag' />
-            <span>EN</span>
-          </button>
-          <button className='hover'>
-            <img src={Ru} alt='flag' />
-            <span>RU</span>
-          </button>
-        </div>
-      </div>
+      <div id='google_translate_element'></div>
       <div className='links'>
         <div className='hoverdown'>
           <a href='/#about' className='hover'>
