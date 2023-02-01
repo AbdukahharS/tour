@@ -27,22 +27,32 @@ const Hero = () => {
     xht.send()
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     const name = e.target.fullname.value
     const phone = e.target.number.value
     const message = e.target.message.value
 
     if (name && phone && message) {
-      const tg = {
-        token: '5868906375:AAGrKOcGib4SJxqVWlr24Q4A_S3DCuQhswU',
-        chat_id: '1135027664',
-      }
+      const token = '5868906375:AAGrKOcGib4SJxqVWlr24Q4A_S3DCuQhswU',
+        chat_id1 = '1135027664',
+        chat_id2 = '82349808'
 
-      sendMessage(
-        tg,
-        `Yangi xabar! %0A%0AIsm: ${name}%0ATelefon raqami: ${phone}%0AXabar: ${message}`
-      )
+      try {
+        await sendMessage(
+          { token, chat_id: chat_id1 },
+          `Yangi xabar! %0A%0AIsm: ${name}%0ATelefon raqami: ${phone}%0AXabar: ${message}`
+        )
+        await sendMessage(
+          { token, chat_id: chat_id2 },
+          `Yangi xabar! %0A%0AIsm: ${name}%0ATelefon raqami: ${phone}%0AXabar: ${message}`
+        )
+
+        alert('Xabaringiz muvaffaqiyatli yuborildi!')
+      } catch (error) {
+        console.error(error)
+        alert(error, message)
+      }
     } else {
       alert('Familiya-ism, raqam va xabaringizni kiritishingiz shart!')
     }
