@@ -105,6 +105,9 @@ nav {
       height: 100%;
       width: 100%;
       position: absolute;
+      background-position: center !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
       // transition: 0.4s;
     }
   }
