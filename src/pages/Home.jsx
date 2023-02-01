@@ -3,7 +3,8 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import Statistics from '../components/Statistics'
-import Benefits from '../components/Benefits'
+import Gallery from '../components/Gallery'
+// import Benefits from '../components/Benefits'
 import Facilities from '../components/Facilities'
 import Review from '../components/Review'
 import Tours from '../components/Tours'
@@ -17,7 +18,8 @@ const Home = () => {
       <Hero />
       <About />
       <Statistics />
-      <Benefits />
+      <Gallery />
+      {/* <Benefits /> */}
       <Facilities />
       <Review />
       <Tours />

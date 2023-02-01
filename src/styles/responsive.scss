@@ -127,6 +127,13 @@ header {
       padding: 40px;
     }
   }
+
+  #gallery {
+    .card {
+      width: calc(50% - 20px) !important;
+    }
+  }
+
   #about {
     .cont {
       flex-direction: row;

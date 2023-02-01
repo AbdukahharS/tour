@@ -47,9 +47,10 @@ button {
   }
 }
 
-@import 'responsive';
-@import 'header', 'hero', 'about', 'statistics', 'benefits', 'facilities',
+@import 'header', 'hero', 'about', 'statistics', 'gallery', 'facilities',
   'review', 'tours', 'footer';
 
 @import 'cart';
 @import 'checkout';
+
+@import 'responsive';

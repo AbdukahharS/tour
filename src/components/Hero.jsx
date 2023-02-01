@@ -1,4 +1,25 @@
+import { useState, useEffect } from 'react'
+import Bg1 from '../images/hero-bg1.jpg'
+import Bg2 from '../images/hero-bg2.jpg'
+import Bg3 from '../images/hero-bg3.jpg'
+import Bg4 from '../images/hero-bg4.jpg'
+
 const Hero = () => {
+  const [ind, setIn] = useState(0)
+  const images = [Bg1, Bg2, Bg3, Bg4]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (ind === 3) {
+        setIn(0)
+      } else {
+        setIn((ind) => ind + 1)
+      }
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [ind])
+
   const sendMessage = (tg, text) => {
     const url = `https://api.telegram.org/bot${tg.token}/sendMessage?chat_id=${tg.chat_id}&text=${text}` // The url to request
     const xht = new XMLHttpRequest()
@@ -29,6 +50,17 @@ const Hero = () => {
 
   return (
     <div className='hero'>
+      <div className='bg'>
+        {images.map((img, i) => (
+          <div
+            key={i}
+            style={{
+              zIndex: i === ind ? '-1' : '-2',
+              background: `url(${img})`,
+            }}
+          ></div>
+        ))}
+      </div>
       <div className='greetings'>
         <h1>Baxtli onlar biz bilan!</h1>
         <div className='line'></div>

@@ -1,10 +1,4 @@
-import { useState } from 'react'
-import {
-  MdLocalPhone,
-  MdCalendarToday,
-  MdArrowDropDown,
-  MdArrowDropUp,
-} from 'react-icons/md'
+import { MdLocalPhone, MdCalendarToday } from 'react-icons/md'
 import {
   FaTelegramPlane,
   FaYoutube,
@@ -12,17 +6,11 @@ import {
   FaInstagram,
   FaFacebookF,
 } from 'react-icons/fa'
-import Uz from '../images/uzb.svg'
-import En from '../images/en.svg'
-import Ru from '../images/ru.svg'
 
 const Header = () => {
-  const [drop, setDrop] = useState(false)
-
   return (
     <header>
       <div className='cont'>
-        {/* <div id='google_translate_element'></div> */}
         <div className='phones wrapper'>
           <MdLocalPhone />
           <a href='tel:+998908173277' className='brdr'>

@@ -1,0 +1,76 @@
+@mixin responsive-box($height) {
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    padding-top: $height;
+  }
+}
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 80px 40px;
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .cont {
+    width: 100%;
+    max-width: calc(100vw - 80px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .card {
+      cursor: pointer;
+      width: calc(25% - 20px);
+      background-position: center !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      border-radius: 10px;
+      @include responsive-box(100%);
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  background-color: $shadowFilter;
+  align-items: center;
+  justify-content: center;
+
+  .cont {
+    background: #fff;
+    max-height: 80vh;
+    max-width: 80vh;
+    padding: 40px;
+    border-radius: 5px;
+    position: relative;
+
+    button {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-size: 40px;
+      color: red;
+    }
+
+    img {
+      width: 100%;
+      max-height: calc(80vh - 80px);
+    }
+  }
+}
