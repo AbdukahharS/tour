@@ -36,7 +36,8 @@ const Hero = () => {
     if (name && phone && message) {
       const token = '5868906375:AAGrKOcGib4SJxqVWlr24Q4A_S3DCuQhswU',
         chat_id1 = '1135027664',
-        chat_id2 = '82349808'
+        chat_id2 = '82349808',
+        chat_id3 = '1946341371'
 
       try {
         await sendMessage(
@@ -45,6 +46,10 @@ const Hero = () => {
         )
         await sendMessage(
           { token, chat_id: chat_id2 },
+          `Yangi xabar! %0A%0AIsm: ${name}%0ATelefon raqami: ${phone}%0AXabar: ${message}`
+        )
+        await sendMessage(
+          { token, chat_id: chat_id3 },
           `Yangi xabar! %0A%0AIsm: ${name}%0ATelefon raqami: ${phone}%0AXabar: ${message}`
         )
 

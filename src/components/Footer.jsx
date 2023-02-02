@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <footer>
       <div className='top'>
-        <div className='col'>
+        <div className='col' id='contacts'>
           <img src={Logo} alt='NodirahSultan' />
           <p>
             Biz sizga mustaqil, xavfsiz va qiziqarli sayohat qilishingizga

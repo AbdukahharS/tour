@@ -37,34 +37,85 @@ const CheckoutComponent = () => {
     const email = e.target.email.value
     const extra = e.target.extra.value
 
-    const tg = {
-      token: '5868906375:AAGrKOcGib4SJxqVWlr24Q4A_S3DCuQhswU',
-      chat_id: '1135027664',
-    }
+    try {
+      const token = '5868906375:AAGrKOcGib4SJxqVWlr24Q4A_S3DCuQhswU',
+        chat_id1 = '1135027664',
+        chat_id2 = '82349808',
+        chat_id3 = '1946341371'
 
-    let order = ''
+      let order = ''
 
-    cart.forEach((tour) => {
-      order += `%0A${tour.name}  ${tour.entity}ta`
-    })
+      cart.forEach((tour) => {
+        order += `%0A${tour.name}  ${tour.entity}ta`
+      })
 
-    sendMessage(
-      tg,
-      `Yangi buyurtma! 
-      %0A%0ABuyurtmachi ma'lumotlari:
-      %0AIsm: ${firstname}
-      %0AFamiliya: ${lastname}
-      %0AMamlakat: ${country}
-      %0AKo'cha manzili: ${street}, ${street2}
-      %0AShahar yoki qishloq: ${city}
-      %0AViloyat: ${region}
-      %0APochta indeksi: ${code}
-      %0AElektron pochta: ${email}
-      %0ATelefon raqami: ${phone}
-      %0AQo'shimcha: ${extra}
-      %0A%0ABuyurtma:
-      ${order}`
-    )
+      sendMessage(
+        { token, chat_id: chat_id1 },
+        `Yangi buyurtma! 
+        %0A%0ABuyurtmachi ma'lumotlari:
+        %0AIsm: ${firstname}
+        %0AFamiliya: ${lastname}
+        %0AMamlakat: ${country}
+        %0AKo'cha manzili: ${street}, ${street2}
+        %0AShahar yoki qishloq: ${city}
+        %0AViloyat: ${region}
+        %0APochta indeksi: ${code}
+        %0AElektron pochta: ${email}
+        %0ATelefon raqami: ${phone}
+        %0AQo'shimcha: ${extra}
+        %0A%0ABuyurtma:
+        ${order}`
+      )
+      sendMessage(
+        { token, chat_id: chat_id2 },
+        `Yangi buyurtma! 
+        %0A%0ABuyurtmachi ma'lumotlari:
+        %0AIsm: ${firstname}
+        %0AFamiliya: ${lastname}
+        %0AMamlakat: ${country}
+        %0AKo'cha manzili: ${street}, ${street2}
+        %0AShahar yoki qishloq: ${city}
+        %0AViloyat: ${region}
+        %0APochta indeksi: ${code}
+        %0AElektron pochta: ${email}
+        %0ATelefon raqami: ${phone}
+        %0AQo'shimcha: ${extra}
+        %0A%0ABuyurtma:
+        ${order}`
+      )
+      sendMessage(
+        { token, chat_id: chat_id3 },
+        `Yangi buyurtma! 
+        %0A%0ABuyurtmachi ma'lumotlari:
+        %0AIsm: ${firstname}
+        %0AFamiliya: ${lastname}
+        %0AMamlakat: ${country}
+        %0AKo'cha manzili: ${street}, ${street2}
+        %0AShahar yoki qishloq: ${city}
+        %0AViloyat: ${region}
+        %0APochta indeksi: ${code}
+        %0AElektron pochta: ${email}
+        %0ATelefon raqami: ${phone}
+        %0AQo'shimcha: ${extra}
+        %0A%0ABuyurtma:
+        ${order}`
+      )
+      e.target.firstname.value = ''
+      e.target.lastname.value = ''
+      e.target.country.value = ''
+      e.target.street.value = ''
+      e.target.street2.value = ''
+      e.target.city.value = ''
+      e.target.region.value = ''
+      e.target.code.value = ''
+      e.target.phone.value = ''
+      e.target.email.value = ''
+      e.target.extra.value = ''
+
+      alert(
+        "Buyurtmangiz muvaffaqiyatli yuborildi! Bizni tanlaganingiz uchun rahmat. Xodimlarimiz yaqin orada siz bilan bog'lanishadi"
+      )
+    } catch (error) {}
   }
 
   return (

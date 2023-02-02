@@ -58,7 +58,7 @@ const Navbar = () => {
           </a>
           <div className='dropdown-content'>
             <a href='/#statistics'>Statistik ma'lumotlar</a>
-            <a href='/#benefits'>Umra haqida</a>
+            <a href='/#gallery'>Fotogalereya</a>
           </div>
         </div>
         <a href='/#facilities' className='hover'>
@@ -69,6 +69,9 @@ const Navbar = () => {
         </a>
         <a href='/#tours' className='hover'>
           Tur dastur
+        </a>
+        <a href='/#contacts' className='hover'>
+          Kontaktlar
         </a>
       </div>
       <a href='/cart' className='cart hover'>
