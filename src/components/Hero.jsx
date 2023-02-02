@@ -48,6 +48,10 @@ const Hero = () => {
           `Yangi xabar! %0A%0AIsm: ${name}%0ATelefon raqami: ${phone}%0AXabar: ${message}`
         )
 
+        e.target.fullname.value = ''
+        e.target.number.value = ''
+        e.target.message.value = ''
+
         alert('Xabaringiz muvaffaqiyatli yuborildi!')
       } catch (error) {
         console.error(error)
