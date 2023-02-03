@@ -1,21 +1,24 @@
 import { useState, useEffect } from 'react'
-import Bg1 from '../images/hero-bg1.jpg'
-import Bg2 from '../images/hero-bg2.jpg'
-import Bg3 from '../images/hero-bg3.jpg'
-import Bg4 from '../images/hero-bg4.jpg'
+import Bg1 from '../images/hero/bg1.jpg'
+import Bg2 from '../images/hero/bg2.jpg'
+import Bg3 from '../images/hero/bg3.jpg'
+import Bg4 from '../images/hero/bg4.jpg'
+import Bg5 from '../images/hero/bg5.jpg'
+import Bg6 from '../images/hero/bg6.jpg'
+import Bg7 from '../images/hero/bg7.jpg'
 
 const Hero = () => {
   const [ind, setIn] = useState(0)
-  const images = [Bg1, Bg2, Bg3, Bg4]
+  const images = [Bg1, Bg2, Bg3, Bg4, Bg5, Bg6, Bg7]
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (ind === 3) {
+      if (ind === 6) {
         setIn(0)
       } else {
         setIn((ind) => ind + 1)
       }
-    }, 3000)
+    }, 4500)
 
     return () => clearInterval(interval)
   }, [ind])
@@ -75,6 +78,7 @@ const Hero = () => {
             key={i}
             style={{
               zIndex: i === ind ? '-1' : '-2',
+              opacity: i === ind ? '1' : '0.4',
               background: `url(${img})`,
             }}
           ></div>

@@ -89,7 +89,7 @@ nav {
   justify-content: space-evenly;
   min-height: 85vh;
   position: relative;
-  background: $shadowFilter;
+  background: #19204050;
   color: #fff;
 
   .bg {
@@ -108,7 +108,7 @@ nav {
       background-position: center !important;
       background-size: cover !important;
       background-repeat: no-repeat !important;
-      // transition: 0.4s;
+      transition: 0.4s;
     }
   }
 
