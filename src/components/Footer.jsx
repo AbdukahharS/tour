@@ -1,9 +1,9 @@
 import {
-  FaFacebookF,
+  // FaFacebookF,
   FaInstagram,
   FaTelegramPlane,
-  FaTiktok,
-  FaYoutube,
+  // FaTiktok,
+  // FaYoutube,
   FaEnvelope,
 } from 'react-icons/fa'
 import {
@@ -28,18 +28,18 @@ const Footer = () => {
             <a href='https://t.me/nodirahsultan'>
               <FaTelegramPlane />
             </a>
-            <a href='youtube.com'>
+            {/* <a href='youtube.com'>
               <FaYoutube />
             </a>
             <a href='tiktok.com'>
               <FaTiktok />
-            </a>
+            </a> */}
             <a href='https://www.instagram.com/nodirahsultan.tour/'>
               <FaInstagram />
             </a>
-            <a href='facebook.com'>
+            {/* <a href='facebook.com'>
               <FaFacebookF />
-            </a>
+            </a> */}
           </div>
         </div>
         <div className='col'>
@@ -51,10 +51,10 @@ const Footer = () => {
               <span>Toshken shahar, Yakkasaroy tumani, Bobur ko'chasi, 77</span>
             </div>
             <div>
-              <MdLocalPhone /> <span>+998908173277</span>
+              <MdLocalPhone /> <span>+998900663311</span>
             </div>
             <div>
-              <MdLocalPhone /> <span>+998900663311</span>
+              <MdLocalPhone /> <span>+998770663311</span>
             </div>
             <div>
               <MdLocalPhone /> <span>+998909193938</span>

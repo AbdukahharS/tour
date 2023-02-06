@@ -1,10 +1,10 @@
 import { MdLocalPhone, MdCalendarToday } from 'react-icons/md'
 import {
   FaTelegramPlane,
-  FaYoutube,
-  FaTiktok,
+  // FaYoutube,
+  // FaTiktok,
   FaInstagram,
-  FaFacebookF,
+  // FaFacebookF,
 } from 'react-icons/fa'
 
 const Header = () => {
@@ -13,11 +13,11 @@ const Header = () => {
       <div className='cont'>
         <div className='phones wrapper'>
           <MdLocalPhone />
-          <a href='tel:+998908173277' className='brdr'>
-            <span>+998908173277</span>
-          </a>
           <a href='tel:+998900663311' className='brdr'>
             <span>+998900663311</span>
+          </a>
+          <a href='tel:+998770663311' className='brdr'>
+            <span>+998770663311</span>
           </a>
           <a href='tel:+998909193938' className='brdr'>
             <span>+998909193938</span>
@@ -25,8 +25,8 @@ const Header = () => {
         </div>
         <div className='phone'>
           <MdLocalPhone />
-          <a href='tel:+998908173277'>
-            <span>+998908173277</span>
+          <a href='tel:+998900663311'>
+            <span>+998900663311</span>
           </a>
         </div>
         <div className=' wrapper'>
@@ -37,18 +37,18 @@ const Header = () => {
           <a href='https://t.me/nodirahsultan'>
             <FaTelegramPlane />
           </a>
-          <a href='youtube.com'>
+          {/* <a href='youtube.com'>
             <FaYoutube />
           </a>
           <a href='tiktok.com'>
             <FaTiktok />
-          </a>
+          </a> */}
           <a href='https://www.instagram.com/nodirahsultan.tour/'>
             <FaInstagram />
           </a>
-          <a href='facebook.com'>
+          {/* <a href='facebook.com'>
             <FaFacebookF />
-          </a>
+          </a> */}
         </div>
       </div>
     </header>
