@@ -25,7 +25,7 @@ const Footer = () => {
             yordam beramiz!
           </p>
           <div className='scl-media'>
-            <a href='https://t.me/nodirahsultan'>
+            <a href='https://telegram.com'>
               <FaTelegramPlane />
             </a>
             {/* <a href='youtube.com'>
@@ -34,7 +34,7 @@ const Footer = () => {
             <a href='tiktok.com'>
               <FaTiktok />
             </a> */}
-            <a href='https://www.instagram.com/nodirahsultan.tour/'>
+            <a href='https://www.instagram.com'>
               <FaInstagram />
             </a>
             {/* <a href='facebook.com'>

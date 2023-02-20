@@ -22,13 +22,22 @@ const About = () => {
             <div className='back'>
               <h3>Biz haqimizda</h3>
               <p>
-                Sayyohlik kompaniyamiz sizni O'zbekistonning dunyo etirofiga
+                {/* Sayyohlik kompaniyamiz sizni O'zbekistonning dunyo etirofiga
                 sazovor bo'lgan joylariga tashrif buyurishga taklif qiladi. Biz
                 2020-yildan buyon faoliyat yuritayotgan O‘zbekistondagi yetakchi
                 sayyohlik kompaniyalaridan birimiz. Biz turistik xizmatlarning
                 keng spektrini taklif qilamiz. Tajribali va ijodiy jamoamiz
                 mehmonlarning har qanday manfaatlarini har doim qo'llab
-                quvvatlaydi.
+                quvvatlaydi. */}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                dolorum cum neque, illum corporis maiores quasi, voluptates aut
+                assumenda atque veritatis quibusdam ullam tempora ea libero
+                praesentium quo a necessitatibus rem consequuntur aliquid error
+                vitae? Sed ea eius, eos blanditiis beatae quos neque, similique
+                quod pariatur nulla quasi at! Vero, similique. Beatae debitis
+                perspiciatis tenetur et ullam necessitatibus, corrupti itaque
+                id, molestias voluptatibus rem quisquam laborum sit eveniet
+                officia qui?
               </p>
             </div>
           </div>

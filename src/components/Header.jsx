@@ -34,7 +34,7 @@ const Header = () => {
           <span className='brdr'>Du - Sha / 09:00 - 18:00</span>
         </div>
         <div className='scl-media  wrapper'>
-          <a href='https://t.me/nodirahsultan'>
+          <a href='https://telegram.com'>
             <FaTelegramPlane />
           </a>
           {/* <a href='youtube.com'>
@@ -43,7 +43,7 @@ const Header = () => {
           <a href='tiktok.com'>
             <FaTiktok />
           </a> */}
-          <a href='https://www.instagram.com/nodirahsultan.tour/'>
+          <a href='https://www.instagram.com'>
             <FaInstagram />
           </a>
           {/* <a href='facebook.com'>
