@@ -24,6 +24,7 @@ const Navbar = () => {
     new window.google.translate.TranslateElement(
       {
         pageLanguage: 'uz',
+        includedLanguages: 'en,ru,uz',
         autoDisplay: false,
       },
       'google_translate_element'
