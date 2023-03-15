@@ -95,7 +95,7 @@ const Hero = () => {
       </div>
       <div className='contact'>
         <form onSubmit={handleSubmit}>
-          <h2>Ma`lumotlaringizni qoldirsangiz, siz bilan aloqaga chiqamiz!</h2>
+          <h2>Buyurtma bersangiz, siz bilan aloqaga chiqamiz!</h2>
           <label htmlFor='fullname'>Familiya va ismingiz</label>
           <input type='text' id='fullname' />
           <label htmlFor='number'>Telefon raqamingiz</label>
