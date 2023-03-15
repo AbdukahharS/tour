@@ -37,10 +37,10 @@ const Hero = () => {
     const message = e.target.message.value
 
     if (name && phone && message) {
-      const token = '5868906375:AAGrKOcGib4SJxqVWlr24Q4A_S3DCuQhswU',
-        chat_id1 = '1135027664',
-        chat_id2 = '82349808',
-        chat_id3 = '1946341371'
+      const token = process.env.REACT_APP_BOT_TOKEN,
+        chat_id1 = process.env.REACT_APP_CHAT_ID1,
+        chat_id2 = process.env.REACT_APP_CHAT_ID2,
+        chat_id3 = process.env.REACT_APP_CHAT_ID3
 
       try {
         await sendMessage(

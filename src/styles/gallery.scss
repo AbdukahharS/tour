@@ -73,4 +73,14 @@
       max-height: calc(80vh - 80px);
     }
   }
+
+  .paymentCont {
+    background: #fff;
+    max-height: 80vh;
+    max-width: 80vw;
+    min-width: 30vw;
+    padding: 40px;
+    border-radius: 5px;
+    position: relative;
+  }
 }

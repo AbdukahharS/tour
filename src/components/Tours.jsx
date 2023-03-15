@@ -49,7 +49,7 @@ const Tours = () => {
                 <img src={Umrah} alt='Umrah' />
                 <div className='top'>
                   <h3>{tour.name}</h3>
-                  <span>{tour.price} $</span>
+                  <span>{tour.price.toLocaleString()} UZS</span>
                 </div>
                 <div className='bottom'>
                   {cart.find((t) => t.id === tour.id) ? (

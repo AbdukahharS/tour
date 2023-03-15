@@ -77,7 +77,7 @@ const Navbar = () => {
       </div>
       <a href='/cart' className='cart hover'>
         <MdShoppingCart />
-        <span>{summ} USD</span>
+        <span>{summ.toLocaleString()} UZS</span>
       </a>
     </nav>
   )

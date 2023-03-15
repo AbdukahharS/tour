@@ -60,7 +60,7 @@ const CartComponent = () => {
                   <img src={require(`../images/${tour.img}`)} alt={tour.name} />
                 </td>
                 <td>{tour.name}</td>
-                <td>{tour.price} $</td>
+                <td>{tour.price.toLocaleString()} UZS</td>
                 <td>
                   <input
                     type='number'
@@ -68,7 +68,7 @@ const CartComponent = () => {
                     onChange={(e) => handleChange(e, tour.id)}
                   />
                 </td>
-                <td>{tour.price * tour.entity} $</td>
+                <td>{(tour.price * tour.entity).toLocaleString()} UZS</td>
               </tr>
             ))}
         </tbody>
@@ -81,7 +81,7 @@ const CartComponent = () => {
           <h2>Buyurtma miqdori</h2>
           <div>
             <span>Jami</span>
-            <span>{summ} $</span>
+            <span>{summ.toLocaleString()} UZS</span>
           </div>
           <a href='/checkout'>Buyurtma berish</a>
         </div>
