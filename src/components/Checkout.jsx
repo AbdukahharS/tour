@@ -275,39 +275,44 @@ const CheckoutComponent = () => {
         </form>
       </div>
       <div className='modal' style={{ display: modal ? 'flex' : 'none' }}>
-        {isLoading && <div className='loader'></div>}
-        <div className='paymentCont'>
-          <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>To'lov</h2>
-          <form method='POST' action='https://checkout.paycom.uz'>
-            <input
-              type='hidden'
-              name='merchant'
-              value='64097ece71f8efd025665675'
-            />
-            <input type='hidden' name='amount' value={summ * 100} />
-            <input type='hidden' name='account[order_id]' value={number} />
-            <button
-              type='submit'
-              style={{
-                cursor: 'pointer',
-                border: '1px solid #ebebeb',
-                borderRadius: '6px',
-                background: 'linear-gradient(to top, #f1f2f2, white)',
-                width: '200px',
-                height: '42px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
-            >
-              <img
-                alt='Payment with Payme'
-                style={{ width: '160px', height: '20px' }}
-                src='http://cdn.payme.uz/buttons/button_big_UZ.svg'
+        {isLoading ? (
+          <div className='loader'></div>
+        ) : (
+          <div className='paymentCont'>
+            <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>
+              To'lov
+            </h2>
+            <form method='POST' action='https://checkout.paycom.uz'>
+              <input
+                type='hidden'
+                name='merchant'
+                value='64097ece71f8efd025665675'
               />
-            </button>
-          </form>
-        </div>
+              <input type='hidden' name='amount' value={summ * 100} />
+              <input type='hidden' name='account[order_id]' value={number} />
+              <button
+                type='submit'
+                style={{
+                  cursor: 'pointer',
+                  border: '1px solid #ebebeb',
+                  borderRadius: '6px',
+                  background: 'linear-gradient(to top, #f1f2f2, white)',
+                  width: '200px',
+                  height: '42px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                <img
+                  alt='Payment with Payme'
+                  style={{ width: '160px', height: '20px' }}
+                  src='http://cdn.payme.uz/buttons/button_big_UZ.svg'
+                />
+              </button>
+            </form>
+          </div>
+        )}
       </div>
     </>
   )
