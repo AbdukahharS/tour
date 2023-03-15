@@ -121,7 +121,8 @@ const CheckoutComponent = () => {
           email,
           phone,
           extra,
-          order
+          order,
+          data.number
         )
         sendMessage(
           { token, chat_id: chat_id3 },
@@ -136,7 +137,8 @@ const CheckoutComponent = () => {
           email,
           phone,
           extra,
-          order
+          order,
+          data.number
         )
         e.target.firstname.value = ''
         e.target.lastname.value = ''
