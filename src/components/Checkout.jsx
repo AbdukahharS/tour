@@ -8,7 +8,8 @@ const CheckoutComponent = () => {
   const { cart } = useContext(CartContext)
   const [summ, setSumm] = useState(0)
   const [number, setNumber] = useState(0)
-  const [modal, setModal] = useState(0)
+  const [modal, setModal] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
   const sendMessage = (
     tg,
@@ -62,6 +63,8 @@ const CheckoutComponent = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    setModal(true)
+    setIsLoading(true)
 
     const docRef = doc(firestore, 'order', 'k7xnK5HvZtCwckMEkCs7')
     const docSnap = await getDoc(docRef)
@@ -154,11 +157,16 @@ const CheckoutComponent = () => {
         // )
         setModal(true)
         setNumber(data.number)
+        setIsLoading(false)
       } catch (error) {
         console.error(error)
         alert(error.message)
+        setModal(false)
+        setIsLoading(false)
       }
     } else {
+      setModal(false)
+      setIsLoading(false)
       console.log('No such document!')
       alert(
         'Muammo chiqdi! Internet bilan aloqangizni tekshirishingizni yoki sahifani yangilashingizni maslahat beramiz.'
@@ -265,6 +273,7 @@ const CheckoutComponent = () => {
         </form>
       </div>
       <div className='modal' style={{ display: modal ? 'flex' : 'none' }}>
+        {isLoading && <div className='loader'></div>}
         <div className='paymentCont'>
           <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>To'lov</h2>
           <form method='POST' action='https://checkout.paycom.uz'>
