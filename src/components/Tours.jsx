@@ -8,11 +8,11 @@ const Tours = () => {
   const { cart, dispatch } = useContext(CartContext)
   const [img, setImg] = useState(null)
 
-  // const handleOpen = (e, ad) => {
-  //   const tag = e.target.tagName
+  const handleOpen = (e, ad) => {
+    const tag = e.target.tagName
 
-  //   if (tag !== 'BUTTON' && tag !== 'svg' && tag !== 'path') setImg(ad)
-  // }
+    if (tag !== 'BUTTON' && tag !== 'svg' && tag !== 'path') setImg(ad)
+  }
 
   const handleClose = () => {
     setImg(null)
@@ -43,7 +43,7 @@ const Tours = () => {
               <div
                 className='card'
                 key={tour.id}
-                // onClick={(e) => handleOpen(e, tour.ad)}
+                onClick={(e) => tour.ad && handleOpen(e, tour.ad)}
                 style={{ cursor: 'pointer' }}
               >
                 <img src={Umrah} alt='Umrah' />

@@ -1,12 +1,10 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel'
-// import Rahimova from '../images/rahimova.jpg'
-import Rahimova from '../images/user.png'
+import Rahimova from '../images/rahimova.jpg'
 import 'react-multi-carousel/lib/styles.css'
 
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 5,
   },
@@ -34,74 +32,62 @@ const Review = () => {
         <Carousel responsive={responsive}>
           <div className='card'>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              eveniet blanditiis commodi magni officia, adipisci odio eos
-              ratione, earum ad doloribus unde quos cum corporis aut labore?
-              Aut, odio delectus!
+              Menga sayohat judayam yoqdi, shunday maroqli sayohat qilishimga
+              yordam bergan NodirahSultan tashkilotiga katta rahmat!
             </p>
             <div>
               <img src={Rahimova} alt='Rahimova' />
-              <h3>John Doe</h3>
+              <h3>Rahimova Munavvar</h3>
             </div>
           </div>
           <div className='card'>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              eveniet blanditiis commodi magni officia, adipisci odio eos
-              ratione, earum ad doloribus unde quos cum corporis aut labore?
-              Aut, odio delectus!
+              Menga sayohat judayam yoqdi, shunday maroqli sayohat qilishimga
+              yordam bergan MXSayohat tashkilotiga katta rahmat!
             </p>
             <div>
               <img src={Rahimova} alt='Rahimova' />
-              <h3>John Doe</h3>
+              <h3>Rahimova Munavvar</h3>
             </div>
           </div>
           <div className='card'>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              eveniet blanditiis commodi magni officia, adipisci odio eos
-              ratione, earum ad doloribus unde quos cum corporis aut labore?
-              Aut, odio delectus!
+              Menga sayohat judayam yoqdi, shunday maroqli sayohat qilishimga
+              yordam bergan MXSayohat tashkilotiga katta rahmat!
             </p>
             <div>
               <img src={Rahimova} alt='Rahimova' />
-              <h3>John Doe</h3>
+              <h3>Rahimova Munavvar</h3>
             </div>
           </div>
           <div className='card'>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              eveniet blanditiis commodi magni officia, adipisci odio eos
-              ratione, earum ad doloribus unde quos cum corporis aut labore?
-              Aut, odio delectus!
+              Menga sayohat judayam yoqdi, shunday maroqli sayohat qilishimga
+              yordam bergan MXSayohat tashkilotiga katta rahmat!
             </p>
             <div>
               <img src={Rahimova} alt='Rahimova' />
-              <h3>John Doe</h3>
+              <h3>Rahimova Munavvar</h3>
             </div>
           </div>
           <div className='card'>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              eveniet blanditiis commodi magni officia, adipisci odio eos
-              ratione, earum ad doloribus unde quos cum corporis aut labore?
-              Aut, odio delectus!
+              Menga sayohat judayam yoqdi, shunday maroqli sayohat qilishimga
+              yordam bergan MXSayohat tashkilotiga katta rahmat!
             </p>
             <div>
               <img src={Rahimova} alt='Rahimova' />
-              <h3>John Doe</h3>
+              <h3>Rahimova Munavvar</h3>
             </div>
           </div>
           <div className='card'>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              eveniet blanditiis commodi magni officia, adipisci odio eos
-              ratione, earum ad doloribus unde quos cum corporis aut labore?
-              Aut, odio delectus!
+              Menga sayohat judayam yoqdi, shunday maroqli sayohat qilishimga
+              yordam bergan MXSayohat tashkilotiga katta rahmat!
             </p>
             <div>
               <img src={Rahimova} alt='Rahimova' />
-              <h3>John Doe</h3>
+              <h3>Rahimova Munavvar</h3>
             </div>
           </div>
         </Carousel>
