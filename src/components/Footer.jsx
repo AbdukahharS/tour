@@ -88,7 +88,12 @@ const Footer = () => {
           himoyalangan.
         </div>
         <div className='developer'>
-          <a href='https://abdukahhar.uz' target='_blank'>
+          <a
+            href='https://abdukahhar.uz'
+            target='_blank'
+            without
+            rel='noreferrer'
+          >
             <img src={DevLogo} alt='Shahzad Abdukahhar' />{' '}
             <span>
               {' '}
