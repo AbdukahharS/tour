@@ -84,7 +84,7 @@ const Footer = () => {
       </div>
       <div className='bottom'>
         <div className='copy'>
-          &copy; 2023 NodirahSultan - Sayohat agentligi. Barcha huquqlar
+          &copy; 2025 NodirahSultan - Sayohat agentligi. Barcha huquqlar
           himoyalangan.
         </div>
         <div className='developer'>
